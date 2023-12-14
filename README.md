@@ -2,6 +2,8 @@
 
 ## Background
 
+[Live link!](https://wremsen.github.io/InterstellarNeighbors/)
+
 Interstellar Neighbors is a data visualization project focusing on the nearest planetary star systems to our solar system - our neighbors so-to-speak. The key focus of this project was to take a look at the nearest stars that have robust planetary systems, possible destinations in the cosmos for far future humans to visit.
 
 By plugging into the NASA API, Interstellar Neighbors will be able to fetch data and characteristics of these far away stars to show us how they compare to our sun.
