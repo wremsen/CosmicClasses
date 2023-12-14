@@ -10,6 +10,7 @@ class Example {
     handleClick() {
         this.ele.children[0].innerText = "Ouch!";
     }
+
 }
 
 export default Example;
