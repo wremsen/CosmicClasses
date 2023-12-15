@@ -1,7 +1,7 @@
 class Example {
     constructor(ele) {
         this.ele = ele;
-        this.ele.innerHTML = "<h1>Interstellar Neighbors</h1>";
+        this.ele.innerHTML = "<h1>INTERSTELLAR NEIGHBORS</h1>";
         // debugger;
     }
 }
