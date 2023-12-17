@@ -20,9 +20,7 @@ fetch(url,options)
     .then(res => res.json())
     .then(data => {
         console.log(data);
-        let star = new Star(data);
-
-        console.log(star);
+        console.log(typeof data[0].distance_light_year)
     })
     .catch(err => {
         console.log(`error ${err}`)
