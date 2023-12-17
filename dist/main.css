@@ -5,54 +5,7 @@
   color: rgb(255, 255, 255);
   text-align: center;
   font: bold;
-}
-
-@keyframes slide-transparency {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.animate-opacity {
-  animation-name: slide-transparency;
-  animation-iteration-count: infinite;
-}
-
-.freq-5 {
-  animation-duration: 5s;
-}
-
-.freq-6 {
-  animation-duration: 6.33s;
-}
-
-.freq-7 {
-  animation-duration: 7s;
-}
-
-.freq-8 {
-  animation-duration: 8.88s;
-}
-
-.freq-9 {
-  animation-duration: 9s;
-}
-
-.freq-10 {
-  animation-duration: 10.17s;
-}
-
-.delay-2 {
-  animation-delay: 1.33s;
-}
-
-.delay-4 {
-  animation-delay: 2.11s;
+  font-family: sans-serif;
 }
 
 .bg {
@@ -61,45 +14,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #000;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 46%, rgb(7, 0, 42) 100%);
   z-index: -1000;
 }
 
-.z-1,
-.z-2,
-.z-3 {
+.vert-line {
+  width: 10px; /* Adjust the width of the line as needed */
+  height: 100vh; /* Make the line span the entire viewport height */
+  background-color: rgb(255, 255, 255); /* Set the color of the line */
   position: absolute;
-  width: 150vw;
-  height: 150vw;
-  left: -50vw;
-  top: -50vw;
-  transform-origin: center;
-}
-
-.tile {
-  overflow: hidden;
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: repeat;
-  background-size: 512px 512px;
-}
-
-.top-left {
-  background-image: url("./img/topleft.png");
-}
-
-.top-right {
-  background-image: url("./img/topright.png");
-}
-
-.bottom-left {
-  background-image: url("./img/bottomleft.png");
-}
-
-.bottom-right {
-  background-image: url("./img/bottomright.png");
+  left: 50%; /* Position the line in the middle horizontally */
+  transform: translateX(-50%);
+  top: 100px;
 }

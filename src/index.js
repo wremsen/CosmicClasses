@@ -1,14 +1,5 @@
-// import Example from "./scripts/example";
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const main = document.getElementById("main");
-//     new Example(main);
-//     console.log("hello world");
-// })
-
-
-
 import Example from "./scripts/example";
+import Star from "./scripts/star.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const main = document.getElementById("main");
@@ -29,9 +20,14 @@ fetch(url,options)
     .then(res => res.json())
     .then(data => {
         console.log(data);
+        let star = new Star(data);
+
+        console.log(star);
     })
     .catch(err => {
         console.log(`error ${err}`)
 });
+
+
 
 

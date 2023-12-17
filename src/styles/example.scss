@@ -4,15 +4,28 @@ $color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);    
     text-align: center;
     font: bold;
+    font-family: sans-serif;
 }
 
-  .bg {
+.bg {
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    background: #000;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 46%, rgba(7,0,42,1) 100%);  
     z-index: -1000;
-  }
+}
+
+.vert-line {
+  width: 10px; /* Adjust the width of the line as needed */
+    height: 100vh; /* Make the line span the entire viewport height */
+    background-color: rgb(255, 255, 255); /* Set the color of the line */
+    position: absolute;
+    left: 50%; /* Position the line in the middle horizontally */
+    transform: translateX(-50%); 
+    top: 100px;
+}
+
   
