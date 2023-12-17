@@ -97,6 +97,6 @@ table {
     box-shadow: 0 0 0 20px rgba(255, 222, 0, 0.5019607843), 0 0 0 60px rgba(255, 222, 0, 0.1254901961), 0 0 0 80px rgba(255, 222, 0, 0.062745098), 0 0 0 100px rgba(255, 222, 0, 0), 0 0 40px 100px rgba(255, 222, 0, 0.062745098);
   }
 }
-#magnitudeChart {
+#barChartContainer {
   left: 75%;
 }
