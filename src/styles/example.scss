@@ -21,14 +21,14 @@ $color: rgb(0, 0, 0);
     z-index: -1000;
 }
 
-.vert-line {
-  width: 10px; /* Adjust the width of the line as needed */
-    height: 100vh; /* Make the line span the entire viewport height */
-    background-color: rgb(255, 255, 255); /* Set the color of the line */
-    position: absolute;
-    left: 50%; /* Position the line in the middle horizontally */
-    transform: translateX(-50%); 
-    top: 100px;
-}
+// .vert-line {
+//   width: 10px; 
+//     height: 100vh; 
+//     background-color: rgb(255, 255, 255); 
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%); 
+//     top: 100px;
+// }
 
   

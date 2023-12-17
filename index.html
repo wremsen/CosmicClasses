@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="./dist/main.css" />
     <link type="image/png" sizes="32x32" rel="icon" href="./assets/icons8-sun-32.png">
     <script src="./dist/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <title>Interstellar Neighbors</title>
   </head>
 
   <body>
 
   <div id="main"></div>
-  <div class="bg">
-  <div class="vert-line"></div>
+
+  <div class="bg"></div>
+
+  <!-- <div class="vert-line"></div> -->
+
   <div class="sun"></div>
+
+  <canvas id="magnitudeChart" width="250" height="200"></canvas>
+
+  <script src="./src/scripts/graphs.js"></script>
     
   </body>
 
