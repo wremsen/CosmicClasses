@@ -126,6 +126,9 @@ table {
 }
 
 .scatterData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 275px;
   width: 500px;
   padding: 20px;
