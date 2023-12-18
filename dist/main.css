@@ -97,6 +97,41 @@ table {
     box-shadow: 0 0 0 20px rgba(255, 222, 0, 0.5019607843), 0 0 0 60px rgba(255, 222, 0, 0.1254901961), 0 0 0 80px rgba(255, 222, 0, 0.062745098), 0 0 0 100px rgba(255, 222, 0, 0), 0 0 40px 100px rgba(255, 222, 0, 0.062745098);
   }
 }
-#barChartContainer {
-  left: 75%;
+.barChartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 275px;
+  padding: 20px;
+  position: absolute;
+  top: 175px;
+  left: 750px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.distanceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 125px;
+  padding: 10px;
+  position: relative;
+  top: 500px;
+  left: 750px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.scatterData {
+  height: 275px;
+  width: 500px;
+  padding: 20px;
+  position: absolute;
+  top: 175px;
+  left: 1125px;
+  background-color: white;
+  border-radius: 25px;
 }
