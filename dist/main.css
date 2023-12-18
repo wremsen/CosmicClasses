@@ -59,7 +59,7 @@ table {
   color: rgb(255, 255, 255);
   text-align: center;
   font: bold;
-  font-size: 150%;
+  font-size: 250%;
   font-family: sans-serif;
   position: relative;
   top: 25px;
@@ -79,22 +79,22 @@ table {
 .sun {
   width: 200px;
   height: 200px;
-  background-color: #ffde00;
+  background-color: #fa4334;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 300px;
   transform: translateY(-50%);
-  box-shadow: 0 0 0 20px rgba(255, 222, 0, 0.5019607843), 0 0 0 60px rgba(255, 222, 0, 0.1254901961), 0 0 0 80px rgba(255, 222, 0, 0.062745098), 0 0 0 100px rgba(255, 222, 0, 0), 0 0 40px 100px rgba(255, 222, 0, 0.062745098);
+  box-shadow: 0 0 0 20px rgba(250, 67, 52, 0.5019607843), 0 0 0 60px rgba(250, 67, 52, 0.1254901961), 0 0 0 80px rgba(250, 67, 52, 0.062745098), 0 0 0 100px rgba(250, 67, 52, 0), 0 0 40px 100px rgba(250, 67, 52, 0.062745098);
   animation: sunrise 1s infinite linear forwards, rays 1.4s infinite linear;
 }
 
 @keyframes rays {
   0% {
-    box-shadow: 0 0 0 0px rgba(255, 222, 0, 0.5019607843), 0 0 0 20px rgba(255, 222, 0, 0.5019607843), 0 0 0 60px rgba(255, 222, 0, 0.1254901961), 0 0 0 80px rgba(255, 222, 0, 0.062745098), 0 0 40px 100px rgba(255, 222, 0, 0.062745098);
+    box-shadow: 0 0 0 0px rgba(250, 67, 52, 0.5019607843), 0 0 0 20px rgba(250, 67, 52, 0.5019607843), 0 0 0 60px rgba(250, 67, 52, 0.1254901961), 0 0 0 80px rgba(250, 67, 52, 0.062745098), 0 0 40px 100px rgba(250, 67, 52, 0.062745098);
   }
   100% {
-    box-shadow: 0 0 0 20px rgba(255, 222, 0, 0.5019607843), 0 0 0 60px rgba(255, 222, 0, 0.1254901961), 0 0 0 80px rgba(255, 222, 0, 0.062745098), 0 0 0 100px rgba(255, 222, 0, 0), 0 0 40px 100px rgba(255, 222, 0, 0.062745098);
+    box-shadow: 0 0 0 20px rgba(250, 67, 52, 0.5019607843), 0 0 0 60px rgba(250, 67, 52, 0.1254901961), 0 0 0 80px rgba(250, 67, 52, 0.062745098), 0 0 0 100px rgba(250, 67, 52, 0), 0 0 40px 100px rgba(250, 67, 52, 0.062745098);
   }
 }
 .barChartContainer {
@@ -106,7 +106,7 @@ table {
   padding: 20px;
   position: absolute;
   top: 175px;
-  left: 750px;
+  left: 700px;
   background-color: white;
   border-radius: 25px;
 }
@@ -120,7 +120,7 @@ table {
   padding: 10px;
   position: relative;
   top: 500px;
-  left: 750px;
+  left: 700px;
   background-color: white;
   border-radius: 25px;
 }
@@ -134,7 +134,7 @@ table {
   padding: 20px;
   position: absolute;
   top: 175px;
-  left: 1125px;
+  left: 1070px;
   background-color: white;
   border-radius: 25px;
 }
