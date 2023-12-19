@@ -59,3 +59,28 @@
     background-color: white;
     border-radius: 25px;
 }
+
+.navContainer {
+    position: relative;
+}
+
+.navBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    width: 700px;
+    height: 75px;
+    transform: translate(-50%, 50%);
+    border: 2px solid white;
+}
+
+.navBox div {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: white;
+    margin: 0 16px;
+}
