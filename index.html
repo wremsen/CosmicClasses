@@ -14,7 +14,9 @@
 
   <body>
 
-  <div id="main"></div>
+  <div id="main">
+    <h1>Interstellar Neighbors</h1>
+  </div>
 
   <div class="bg"></div>
 
@@ -25,17 +27,17 @@
   
     <div class="barChartContainer">
       <canvas id="magnitudeChart" width="275px" height="275px"></canvas>
-      <script src="./src/scripts/graphs.js"></script>
+      <!-- <script src="./src/scripts/bar.js"></script> -->
     </div>
 
     <div class="distanceContainer">
       <canvas id="distanceChart" width="500px" height="100px"></canvas>
-      <script src="./src/scripts/distance.js"></script>
+      <!-- <script src="./src/scripts/distance.js"></script> -->
     </div>
 
     <div class="scatterData">
       <canvas id="scatterPlot" width="350px" height="200px"></canvas>
-      <script src="./src/scripts/scatter.js"></script>
+      <!-- <script src="./src/scripts/scatter.js"></script> -->
     </div>
 
     <div class="miscContainer">
@@ -46,20 +48,24 @@
 
     <div class="navContainer">
       <div class="navBox">
-        <div class="sunOne"></div>
-        <div class="sunTwo"></div>
-        <div class="sunThree"></div>
-        <div class="sunFour"></div>
-        <div class="sunFive"></div>
-        <div class="sunSix"></div>
-        <div class="sunSeven"></div>
+        <button id="sunOne"></button>
+        <button id="sunTwo"></button>
+        <button id="sunThree"></button>
+        <button id="sunFour"></button>
+        <button id="sunFive"></button>
+        <button id="sunSix"></button>
+        <button id="sunSeven"></button>
       </div>
     </div>
   
 
 
   <!-- <script src="./src/scripts/graphs.js"></script> -->
-    
+    <script src="./src/scripts/updateGraphs.js"></script>
+    <script src="./src/scripts/scatter.js"></script>
+    <script src="./src/scripts/distance.js"></script>
+    <script src="./src/scripts/bar.js"></script>
+    <script src="./src/scripts/buttons.js"></script>
   </body>
 
 </html>

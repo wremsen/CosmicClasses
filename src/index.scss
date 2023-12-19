@@ -1,5 +1,5 @@
 @import "./styles/reset.scss";
-@import "./styles/example.scss";
+@import "./styles/background.scss";
 @import "./styles/sun.scss";
 
 
@@ -14,7 +14,8 @@
     position: absolute;
     top: 185px;
     left: 650px;
-    background-color: white;
+    // background-color: white;
+    background-color: whitesmoke;
     border-radius: 25px;
 }
 
@@ -77,7 +78,7 @@
     border: 2px solid white;
 }
 
-.navBox div {
+.navBox button {
     height: 60px;
     width: 60px;
     border-radius: 30px;
