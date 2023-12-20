@@ -55,12 +55,15 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: spaceFont;
+  src: url("../assets/AstroSpace-eZ2Bg.ttf");
+}
 #main > h1 {
   color: rgb(255, 255, 255);
   text-align: center;
-  font: bold;
-  font-size: 250%;
-  font-family: sans-serif;
+  font-size: 36px;
+  font-family: spaceFont;
   position: relative;
   top: 25px;
 }
@@ -167,7 +170,7 @@ body {
   padding: 20px;
   position: absolute;
   top: 185px;
-  left: 650px;
+  left: 600px;
   border-radius: 25px;
 }
 
@@ -180,7 +183,7 @@ body {
   padding: 10px;
   position: absolute;
   top: 510px;
-  left: 650px;
+  left: 600px;
   border-radius: 25px;
 }
 
@@ -193,7 +196,7 @@ body {
   padding: 20px;
   position: absolute;
   top: 185px;
-  left: 1020px;
+  left: 970px;
   border-radius: 25px;
 }
 
@@ -207,7 +210,7 @@ body {
   padding: 10px;
   position: absolute;
   top: 510px;
-  left: 1190px;
+  left: 1130px;
   border-radius: 25px;
 }
 
@@ -219,6 +222,7 @@ body {
 
 .navContainer {
   position: relative;
+  top: 15px;
 }
 
 .navBox {

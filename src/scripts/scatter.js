@@ -20,7 +20,7 @@ const scatterOptions = {
             max: 24,
             title: {
                 display: true,
-                align: 'end',
+                // align: 'end',
                 text: 'Right Ascension (Hours)',
                 color: 'white'
             },
