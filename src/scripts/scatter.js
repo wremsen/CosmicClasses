@@ -7,7 +7,7 @@ const scatterData = {
     datasets: [{
         data: [{}],
         label: 'Declination & Right Ascension',
-        backgroundColor: '#fa4334'
+        backgroundColor: '#ff9b3c'
     }],
   };
 

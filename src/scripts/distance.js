@@ -5,7 +5,7 @@ const distanceData = {
   labels: ["Distance (Lightyears)"],
   datasets: [{
     data: [0],
-    backgroundColor: '#fa4334'
+    backgroundColor: '#ff9b3c'
   }]
 }
 

@@ -52,7 +52,7 @@ body {
     border-radius: 25px;
 }
 
-.miscContainer {
+#miscContainer {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -67,11 +67,10 @@ body {
     border-radius: 25px;
 }
 
-.miscContainer ul {
+#miscContainer ul {
     margin: 10px;
     color: white;
     font-size: 24px;
-    font-style: bold;
 }
 
 .navContainer {
@@ -88,7 +87,7 @@ body {
     width: 700px;
     height: 75px;
     transform: translate(-50%, 50%);
-    border: 2px solid white;
+    // border: 2px solid white;
 }
 
 .navBox button {
@@ -97,7 +96,7 @@ body {
     border-radius: 30px;
     background-color: white;
     margin: 0 16px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
 }
 

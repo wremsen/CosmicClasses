@@ -15,7 +15,7 @@ const magnitudeData = {
   labels: ["Apparent Magnitude", "Absolute Magnitude"],
   datasets: [{
     data: [0, 0],
-    backgroundColor: '#fa4334'
+    backgroundColor: '#ff9b3c'
   }]
 }
 
@@ -23,7 +23,7 @@ const barOptions = {
   scales: {
     x: {
       title: {
-        color: '#fa4334',
+        color: '#ff9b3c',
       },
       ticks: {
         color: 'white',

@@ -79,22 +79,22 @@ table {
 .sun {
   width: 200px;
   height: 200px;
-  background-color: #fa4334;
+  background-color: #ff9b3c;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 250px;
   transform: translateY(-50%);
-  box-shadow: 0 0 0 20px rgba(250, 67, 52, 0.5019607843), 0 0 0 60px rgba(250, 67, 52, 0.1254901961), 0 0 0 80px rgba(250, 67, 52, 0.062745098), 0 0 0 100px rgba(250, 67, 52, 0), 0 0 40px 100px rgba(250, 67, 52, 0.062745098);
+  box-shadow: 0 0 0 20px rgba(255, 155, 60, 0.5019607843), 0 0 0 60px rgba(255, 155, 60, 0.1254901961), 0 0 0 80px rgba(255, 155, 60, 0.062745098), 0 0 0 100px rgba(255, 155, 60, 0), 0 0 40px 100px rgba(255, 155, 60, 0.062745098);
   animation: sunrise 0.5s infinite linear forwards, rays 1s infinite linear;
 }
 
 @keyframes rays {
   0% {
-    box-shadow: 0 0 0 0px rgba(250, 67, 52, 0.5019607843), 0 0 0 20px rgba(250, 67, 52, 0.5019607843), 0 0 0 60px rgba(250, 67, 52, 0.1254901961), 0 0 0 80px rgba(250, 67, 52, 0.062745098), 0 0 40px 100px rgba(250, 67, 52, 0.062745098);
+    box-shadow: 0 0 0 0px rgba(255, 155, 60, 0.5019607843), 0 0 0 20px rgba(255, 155, 60, 0.5019607843), 0 0 0 60px rgba(255, 155, 60, 0.1254901961), 0 0 0 80px rgba(255, 155, 60, 0.062745098), 0 0 40px 100px rgba(255, 155, 60, 0.062745098);
   }
   100% {
-    box-shadow: 0 0 0 20px rgba(250, 67, 52, 0.5019607843), 0 0 0 60px rgba(250, 67, 52, 0.1254901961), 0 0 0 80px rgba(250, 67, 52, 0.062745098), 0 0 0 100px rgba(250, 67, 52, 0), 0 0 40px 100px rgba(250, 67, 52, 0.062745098);
+    box-shadow: 0 0 0 20px rgba(255, 155, 60, 0.5019607843), 0 0 0 60px rgba(255, 155, 60, 0.1254901961), 0 0 0 80px rgba(255, 155, 60, 0.062745098), 0 0 0 100px rgba(255, 155, 60, 0), 0 0 40px 100px rgba(255, 155, 60, 0.062745098);
   }
 }
 body {
@@ -143,7 +143,7 @@ body {
   border-radius: 25px;
 }
 
-.miscContainer {
+#miscContainer {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -157,11 +157,10 @@ body {
   border-radius: 25px;
 }
 
-.miscContainer ul {
+#miscContainer ul {
   margin: 10px;
   color: white;
   font-size: 24px;
-  font-style: bold;
 }
 
 .navContainer {
@@ -178,7 +177,6 @@ body {
   width: 700px;
   height: 75px;
   transform: translate(-50%, 50%);
-  border: 2px solid white;
 }
 
 .navBox button {
@@ -187,7 +185,7 @@ body {
   border-radius: 30px;
   background-color: white;
   margin: 0 16px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
 }
 

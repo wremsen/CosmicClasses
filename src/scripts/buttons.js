@@ -36,15 +36,42 @@ const changeData = async (name) => {
     }
 
     let scatterData = {x: rightAsc, y: declination};
+
+    let name = data[0].name
+    let spectralClass = data[0].spectral_class
+    let constellation = data[0].constellation
+
     
     changeBar(magnitude);
     changeDistance(distance);
     updateScatter(scatterData);
+    updateMisc(name, spectralClass, constellation);
 
 
     } catch (error) {
         console.log(error);
         }
+}
+
+
+const updateMisc = (name, stellarClass, constellation) => {
+    let miscContainer = document.getElementById('miscContainer')
+
+    while (miscContainer.firstChild) {
+        miscContainer.removeChild(miscContainer.firstChild);
+    }
+
+    let nameLi = document.createElement("ul");
+    let stellarLi = document.createElement("ul");
+    let constLi = document.createElement("ul");
+
+    nameLi.textContent = "Name: " + name;
+    stellarLi.textContent = "Class: " + stellarClass;
+    constLi.textContent = "Constellation: " + constellation;
+
+    miscContainer.appendChild(nameLi);
+    miscContainer.appendChild(stellarLi);
+    miscContainer.appendChild(constLi);
 }
 
 proximaCent.addEventListener('click', async () => {
