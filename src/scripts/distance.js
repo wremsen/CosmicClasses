@@ -10,9 +10,9 @@ const distanceData = {
 
 const distanceOptions = {
   scales: {
-    y: {
+    x: {
+      max: 20,
       beginAtZero: true,
-      max: 10,
       ticks: {
         color: 'orange',
       }
@@ -23,7 +23,7 @@ const distanceOptions = {
       display: false,
     }
   },
-  responsive: true,
+  responsive: false,
   indexAxis: "y"
 }
   

@@ -22,6 +22,7 @@ const magnitudeData = {
 const barOptions = {
   scales: {
     y: {
+      max: 18,
       beginAtZero: true,
       ticks: {
         color: 'black',

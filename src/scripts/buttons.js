@@ -1,12 +1,20 @@
 const proximaCent = document.getElementById("sunOne");
 const lacaille = document.getElementById("sunTwo");
+const lalande = document.getElementById("sunThree");
+const ross = document.getElementById("sunFour");
+const teegarden = document.getElementById("sunFive");
+const gliese570 = document.getElementById("sunSix");
+const luyten = document.getElementById("sunSeven");
 
-const changeData = async () => {
+const changeData = async (name) => {
+
+    let url = `https://api.api-ninjas.com/v1/stars?name=${name}`;
+
+
     let options = {
         method: 'GET',
         headers: { 'x-api-key': 'V5JuNaDQpyt7KUdxNy9K0w==rYDridkfG3Qn0ZSZ' }
     }
-    let url = `https://api.api-ninjas.com/v1/stars?name=proxima`
 
     try {
     const res = await fetch(url, options);
@@ -39,5 +47,59 @@ const changeData = async () => {
         }
 }
 
-proximaCent.addEventListener('click', changeData);
-lacaille.addEventListener('click', changeData);
+proximaCent.addEventListener('click', async () => {
+    try {
+        await changeData('proxima');
+    } catch(error) {
+        console.log(error);
+    }
+});
+
+lacaille.addEventListener('click', async () => {
+    try {
+        await changeData('lacaille');
+    } catch(error) {
+        console.log(error);
+    }
+});
+
+lalande.addEventListener('click', async () => {
+    try {
+        await changeData('lalande');
+    } catch(error) {
+        console.log(error);
+    }
+});
+
+ross.addEventListener('click', async () => {
+    try {
+        await changeData('ross 248');
+    } catch(error) {
+        console.log(error);
+    }
+});
+
+teegarden.addEventListener('click', async () => {
+    try {
+        await changeData('teegarden');
+    } catch(error) {
+        console.log(error);
+    }
+});
+
+gliese570.addEventListener('click', async () => {
+    try {
+        await changeData('gliese 570');
+    } catch(error) {
+        console.log(error);
+    }
+});
+
+luyten.addEventListener('click', async () => {
+    try {
+        await changeData('luyten');
+    } catch(error) {
+        console.log(error);
+    }
+});
+

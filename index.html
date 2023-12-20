@@ -18,26 +18,23 @@
     <h1>Interstellar Neighbors</h1>
   </div>
 
-  <div class="bg"></div>
+  
 
-  <!-- <div class="vert-line"></div> -->
+  <div class="bg"></div>
 
   <div class="sun"></div>
   
   
     <div class="barChartContainer">
       <canvas id="magnitudeChart" width="275px" height="275px"></canvas>
-      <!-- <script src="./src/scripts/bar.js"></script> -->
     </div>
 
     <div class="distanceContainer">
       <canvas id="distanceChart" width="500px" height="100px"></canvas>
-      <!-- <script src="./src/scripts/distance.js"></script> -->
     </div>
 
     <div class="scatterData">
       <canvas id="scatterPlot" width="350px" height="200px"></canvas>
-      <!-- <script src="./src/scripts/scatter.js"></script> -->
     </div>
 
     <div class="miscContainer">
@@ -57,15 +54,24 @@
         <button id="sunSeven"></button>
       </div>
     </div>
-  
+
+    <button id="openMod">Open</button>
+    
+    <div id="modContainer">
+        <div id="modal">
+            <h2>Welcome to Interstellar Neighbors:</h2>
+            <p>Interstellar neighbors is a brief data visualization showcasing some key data points about some of the closest stars to our sun.</p>
+            <button id="closeMod">Close</button>
+        </div>
+    </div>
 
 
-  <!-- <script src="./src/scripts/graphs.js"></script> -->
     <script src="./src/scripts/updateGraphs.js"></script>
     <script src="./src/scripts/scatter.js"></script>
     <script src="./src/scripts/distance.js"></script>
     <script src="./src/scripts/bar.js"></script>
     <script src="./src/scripts/buttons.js"></script>
+    <script src="./src/scripts/modal.js"></script>
   </body>
 
 </html>

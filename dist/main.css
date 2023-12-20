@@ -97,6 +97,13 @@ table {
     box-shadow: 0 0 0 20px rgba(250, 67, 52, 0.5019607843), 0 0 0 60px rgba(250, 67, 52, 0.1254901961), 0 0 0 80px rgba(250, 67, 52, 0.062745098), 0 0 0 100px rgba(250, 67, 52, 0), 0 0 40px 100px rgba(250, 67, 52, 0.062745098);
   }
 }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .barChartContainer {
   display: flex;
   justify-content: center;
@@ -140,9 +147,7 @@ table {
 }
 
 .miscContainer {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  display: block;
   width: 350px;
   height: 125px;
   padding: 10px;
@@ -176,4 +181,30 @@ table {
   border-radius: 30px;
   background-color: white;
   margin: 0 16px;
+}
+
+#modContainer {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(4, 4, 4, 0.7);
+}
+
+#openMod {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#modal {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid black;
 }
