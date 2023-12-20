@@ -25,7 +25,7 @@ button {
     background-color: white;
     position: absolute;
     top: 20px;
-    right: 450px;
+    right: 200px;
     border-radius: 12px;
     color: #ff9b3c;
     font-weight: bold;
@@ -60,6 +60,7 @@ button {
 #modal button {
     height: 25px;
     width: 80px;
+    border-radius: 10px;
     background-color: white;
     color: blue;
     display: flex;
