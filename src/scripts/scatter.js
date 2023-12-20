@@ -1,12 +1,13 @@
 Chart.defaults.elements.point.backgroundColor = 'blue';
-Chart.defaults.elements.point.radius = 5;
+Chart.defaults.elements.point.radius = 8;
 
 const scatterGraph = document.getElementById("scatterPlot");
 
 const scatterData = {
     datasets: [{
         data: [{}],
-        label: 'Declination & Right Ascension'
+        label: 'Declination & Right Ascension',
+        backgroundColor: '#fa4334'
     }],
   };
 
@@ -21,7 +22,14 @@ const scatterOptions = {
                 display: true,
                 align: 'end',
                 text: 'Right Ascension (Hours)',
-            }
+                color: 'white'
+            },
+            ticks: {
+                color: 'white',
+              },
+              grid: {
+                color: 'white',
+              }
         },
         y: {
             type: 'linear',
@@ -31,10 +39,22 @@ const scatterOptions = {
             max: 100,
             title: {
                 display: true,
-                text: 'Declination'
-            }
+                text: 'Declination',
+                color: 'white'
+            },
+            ticks: {
+                color: 'white',
+              },
+              grid: {
+                color: 'white',
+              }
         },
-    }
+    },
+    plugins: {
+        legend: {
+          display: false,
+        }
+      }
 }
 
 

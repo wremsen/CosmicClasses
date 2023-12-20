@@ -14,14 +14,8 @@
     0 0 0 80px #fa433410, 
     0 0 0 100px #fa433400,
     0 0 40px 100px #fa433410;
-    animation: sunrise 1s infinite linear forwards, rays 1.4s infinite linear;
+    animation: sunrise .5s infinite linear forwards, rays 1s infinite linear;
 }
-
-// @keyframes sunrise {
-//     0% {
-//         box-shadow: none;
-//     }
-// }
 
 @keyframes rays {
     0% {

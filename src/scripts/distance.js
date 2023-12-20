@@ -1,10 +1,11 @@
+Chart.defaults.color = '#FFFFFF';
 const distanceGraph = document.getElementById("distanceChart");
 
 const distanceData = {
-  labels: ["Distance From Sun"],
+  labels: ["Distance (Lightyears)"],
   datasets: [{
     data: [0],
-    backgroundColor: 'orange'
+    backgroundColor: '#fa4334'
   }]
 }
 
@@ -14,16 +15,27 @@ const distanceOptions = {
       max: 20,
       beginAtZero: true,
       ticks: {
-        color: 'orange',
+        color: 'white',
+      },
+      grid: {
+        color: 'white',
+      }
+    },
+    y: {
+      grid: {
+        color: 'white',
       }
     }
   },
   plugins: {
     legend: {
       display: false,
+      labels: {
+        color: 'white',
+      }
     }
   },
-  responsive: false,
+  responsive: true,
   indexAxis: "y"
 }
   

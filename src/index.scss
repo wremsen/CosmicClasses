@@ -20,7 +20,7 @@ body {
     top: 185px;
     left: 650px;
     // background-color: white;
-    background-color: whitesmoke;
+    // background-color: whitesmoke;
     border-radius: 25px;
 }
 
@@ -34,7 +34,7 @@ body {
     position: absolute;
     top: 510px;
     left: 650px;
-    background-color: white;
+    // background-color: white;
     border-radius: 25px;
 }
 
@@ -48,20 +48,30 @@ body {
     position: absolute;
     top: 185px;
     left: 1020px;
-    background-color: white;
+    // background-color: white;
     border-radius: 25px;
 }
 
 .miscContainer {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
     width: 350px;
     height: 125px;
     padding: 10px;
     position: absolute;
     top: 510px;
     left: 1190px;
-    background-color: white;
+    // background-color: white;
     border-radius: 25px;
+}
+
+.miscContainer ul {
+    margin: 10px;
+    color: white;
+    font-size: 24px;
+    font-style: bold;
 }
 
 .navContainer {
@@ -87,7 +97,10 @@ body {
     border-radius: 30px;
     background-color: white;
     margin: 0 16px;
+    font-size: 24px;
+    font-weight: bold;
 }
+
 
 
 #modContainer {

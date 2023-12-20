@@ -86,7 +86,7 @@ table {
   left: 250px;
   transform: translateY(-50%);
   box-shadow: 0 0 0 20px rgba(250, 67, 52, 0.5019607843), 0 0 0 60px rgba(250, 67, 52, 0.1254901961), 0 0 0 80px rgba(250, 67, 52, 0.062745098), 0 0 0 100px rgba(250, 67, 52, 0), 0 0 40px 100px rgba(250, 67, 52, 0.062745098);
-  animation: sunrise 1s infinite linear forwards, rays 1.4s infinite linear;
+  animation: sunrise 0.5s infinite linear forwards, rays 1s infinite linear;
 }
 
 @keyframes rays {
@@ -114,7 +114,6 @@ body {
   position: absolute;
   top: 185px;
   left: 650px;
-  background-color: whitesmoke;
   border-radius: 25px;
 }
 
@@ -128,7 +127,6 @@ body {
   position: absolute;
   top: 510px;
   left: 650px;
-  background-color: white;
   border-radius: 25px;
 }
 
@@ -142,20 +140,28 @@ body {
   position: absolute;
   top: 185px;
   left: 1020px;
-  background-color: white;
   border-radius: 25px;
 }
 
 .miscContainer {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
   width: 350px;
   height: 125px;
   padding: 10px;
   position: absolute;
   top: 510px;
   left: 1190px;
-  background-color: white;
   border-radius: 25px;
+}
+
+.miscContainer ul {
+  margin: 10px;
+  color: white;
+  font-size: 24px;
+  font-style: bold;
 }
 
 .navContainer {
@@ -181,6 +187,8 @@ body {
   border-radius: 30px;
   background-color: white;
   margin: 0 16px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 #modContainer {
