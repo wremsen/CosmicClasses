@@ -4,9 +4,9 @@
 
 [Live link!](https://wremsen.github.io/InterstellarNeighbors/)
 
-Interstellar Neighbors is a data visualization project focusing on the nearest planetary star systems to our solar system - our neighbors so-to-speak. The key focus of this project was to take a look at the nearest stars that have robust planetary systems, possible destinations in the cosmos for far future humans to visit.
+Interstellar Neighbors is a data visualization project focusing on some of the nearest planetary star systems to our solar system - our neighbors so-to-speak. The key focus of this project was to take a look at the nearest stars that have robust planetary systems, possible destinations in the cosmos for far future humans to visit.
 
-By plugging into the NASA API, Interstellar Neighbors will be able to fetch data and characteristics of these far away stars to show us how they compare to our sun.
+By plugging into the Stars API from API Ninjas, Interstellar Neighbors fetches data and characteristics of these far away stars.
 
 ## Functionality & MVPs
 
@@ -16,31 +16,68 @@ With Interstellar Neighbors you can:
 
 In order to retrieve the star's data, we make a fetch request to the API and save the various data points to use as we update our charts and graphs.
 
-![Api Fetch Code]("./assets/starsApiFetch.png")
+```
+const changeData = async (name) => {
+
+    let url = `https://api.api-ninjas.com/v1/stars?name=${name}`;
+    let options = {
+        method: 'GET',
+        headers: { 'x-api-key': 'V5JuNaDQpyt7KUdxNy9K0w==rYDridkfG3Qn0ZSZ' }
+    }
+
+    try {
+    const res = await fetch(url, options);
+    const data = await res.json();
+        
+    if (!res.ok) {
+        console.log('error')
+            return
+    }
+        
+    let magnitude = [data[0].apparent_magnitude, data[0].absolute_magnitude];
+    let distance = [data[0].distance_light_year];
+    
+    let rightAsc = parseFloat(data[0].right_ascension.slice(0, 2));
+    let declination = (data[0].declination.slice(0, 3));
+    
+    if (declination[0] === '+') {
+        declination = declination.slice(1);
+    } else {
+        declination = parseFloat(declination.slice(1) * -1);
+    }
+
+    let scatterData = {x: rightAsc, y: declination};
+
+    let name = data[0].name
+    let spectralClass = data[0].spectral_class
+    let constellation = data[0].constellation
+
+    
+    changeBar(magnitude);
+    changeDistance(distance);
+    updateScatter(scatterData);
+    updateMisc(name, spectralClass, constellation);
 
 
-## Wireframes
+    } catch (error) {
+        console.log(error);
+        }
+}
+```
 
-[Link to basic wireframe](https://wireframe.cc/FImMn0)
+We then simply invoke the functions changeBar, changeDistance, updateScatter, and updateMisc (defined in our chart files) with the data we retrieved from our fetch rquest. Thanks to some nifty, built-in functionality from Chart.js, our charts update with the relevant information.
+
 
 ## Technologies
 
-List the technologies, frameworks, and tools I used in this project. Include version numbers if applicable.
+List the technologies, frameworks, and tools I used in this project. 
 
-- D3
-- Nasa API
+- Chart.js
+- Stars API (API Ninjas)
 
-## Implementation Timeline
+## Future Features
 
-- Thursday: Setup project, get webpack running and spend time with NASA API, begin initial work on classes
-- Friday: Work on the logic of "scrolling down" the page and fetching the data to display for each star
-- Monday: Wrap up logic and work on displaying of data and formatting
-- Tuesday: Hopefully have all the logic done and can spend entire day on styling, making it look as good as possible
-- Wednesday AM: Any last minute fixes and changes that need to be made to be ready for afternoon presentation
-
-## Bonus Features
-
-There are several additional features that could be worth pursuing in the future. Possible addtions:
-
-- Links to articles, videos, and additional info on each of the various systems that dive deeper into the corresponding data
-- More advanced visualization of data (animated models of each of the systems for example)
+- Changes to star buttons: Instead of fetching an indiviual star's data - cycle through stars of similar classes
+- Implement a more robust "distance" chart: represent to-scale distance of selected star
+- Search functionality: search for a star by specific properties
+- Styling tweaks and adjustments
