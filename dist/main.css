@@ -97,6 +97,60 @@ table {
     box-shadow: 0 0 0 20px rgba(255, 155, 60, 0.5019607843), 0 0 0 60px rgba(255, 155, 60, 0.1254901961), 0 0 0 80px rgba(255, 155, 60, 0.062745098), 0 0 0 100px rgba(255, 155, 60, 0), 0 0 40px 100px rgba(255, 155, 60, 0.062745098);
   }
 }
+#sunOne {
+  background-color: #ffc182;
+}
+
+#sunTwo {
+  background-color: #ffba76;
+}
+
+#sunThree {
+  background-color: #ffb56c;
+}
+
+#sunFour {
+  background-color: #ffac5c;
+}
+
+#sunFive {
+  background-color: #ffa753;
+}
+
+#sunSix {
+  background-color: #ffa34b;
+}
+
+#sunSeven {
+  background-color: #ff9b3c;
+}
+
+#modContainer {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(4, 4, 4, 0.7);
+}
+
+#openMod {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#modal {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid black;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -187,30 +241,5 @@ body {
   margin: 0 16px;
   font-size: 18px;
   font-weight: bold;
-}
-
-#modContainer {
-  display: none;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background-color: rgba(4, 4, 4, 0.7);
-}
-
-#openMod {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-#modal {
-  width: 400px;
-  height: 400px;
-  background-color: white;
-  border: 1px solid black;
+  color: white;
 }

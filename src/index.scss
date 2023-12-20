@@ -1,6 +1,8 @@
 @import "./styles/reset.scss";
 @import "./styles/background.scss";
 @import "./styles/sun.scss";
+@import "./styles/sunButtons.scss";
+@import "./styles/modal.scss";
 
 body {
     display: flex;
@@ -98,32 +100,6 @@ body {
     margin: 0 16px;
     font-size: 18px;
     font-weight: bold;
+    color: white;
 }
 
-
-
-#modContainer {
-    display: none;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: rgba(4, 4, 4, 0.7);
-}
-
-#openMod {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#modal {
-    width: 400px;
-    height: 400px;
-    background-color: white;
-    border: 1px solid black;
-}
