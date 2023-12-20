@@ -16,7 +16,7 @@ With Interstellar Neighbors you can:
 
 In order to retrieve the star's data, we make a fetch request to the API and save the various data points to use as we update our charts and graphs.
 
-```
+```js
 const changeData = async (name) => {
 
     let url = `https://api.api-ninjas.com/v1/stars?name=${name}`;
