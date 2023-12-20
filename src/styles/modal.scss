@@ -1,3 +1,11 @@
+@font-face {
+    font-family: spaceFont;
+    src: url("../assets/AstroSpace-eZ2Bg.ttf");
+}
+
+button {
+    all: unset;
+}
 #modContainer {
     display: none;
     position: fixed;
@@ -8,18 +16,54 @@
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: rgba(4, 4, 4, 0.7);
+    background-color: rgba(35, 35, 35, 0.859);
 }
 
 #openMod {
+    height: 40px;
+    width: 80px;
+    background-color: white;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 500px;
+    border-radius: 12px;
+    color: #ff9b3c;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
 }
 
 #modal {
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 200px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 46%, rgba(7,0,42,1) 100%);  
+    // border: 1px solid black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#modal h1 {
+    font-family: spaceFont;
+    font-size: 25px;
+}
+
+#modal p {
+    font-size: 20px;
+}
+
+#modal button {
+    height: 25px;
+    width: 80px;
     background-color: white;
-    border: 1px solid black;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
