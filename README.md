@@ -10,11 +10,14 @@ By plugging into the NASA API, Interstellar Neighbors will be able to fetch data
 
 ## Functionality & MVPs
 
-With Interstellar Neighbors you will be able to:
+With Interstellar Neighbors you can:
 
-- Scroll down the page and follow a to-scale line representing the distance away from our Sun
-- Use the nav buttons at the top of the page to quickly "jump" to a specific star system
-- Hover over key data points to recieve additional information
+- Click on various stars to view their data
+
+In order to retrieve the star's data, we make a fetch request to the API and save the various data points to use as we update our charts and graphs.
+
+![Api Fetch Code]("./assets/starsApiFetch.png")
+
 
 ## Wireframes
 

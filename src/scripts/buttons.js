@@ -9,8 +9,6 @@ const luyten = document.getElementById("sunSeven");
 const changeData = async (name) => {
 
     let url = `https://api.api-ninjas.com/v1/stars?name=${name}`;
-
-
     let options = {
         method: 'GET',
         headers: { 'x-api-key': 'V5JuNaDQpyt7KUdxNy9K0w==rYDridkfG3Qn0ZSZ' }
@@ -29,6 +27,7 @@ const changeData = async (name) => {
     let distance = [data[0].distance_light_year];
     let rightAsc = parseFloat(data[0].right_ascension.slice(0, 2));
     let declination = (data[0].declination.slice(0, 3));
+    
     if (declination[0] === '+') {
         declination = declination.slice(1);
     } else {
