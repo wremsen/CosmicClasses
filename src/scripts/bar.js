@@ -33,8 +33,7 @@ const barOptions = {
       }
     },
     y: {
-      max: 18,
-      beginAtZero: true,
+      beginAtZero: false,
       ticks: {
         color: 'white',
       },
@@ -54,7 +53,8 @@ const barOptions = {
 let magnitude = new Chart(magnitudeGraph, {type: 'bar', data: magnitudeData, options: barOptions})
 
 
-const changeBar = (data) => {
+const changeBar = (data, color) => {
   magnitude.data.datasets[0].data = data;
+  magnitude.data.datasets[0].backgroundColor = color;
   magnitude.update();
 }

@@ -1,10 +1,20 @@
-const proximaCent = document.getElementById("sunOne");
-const lacaille = document.getElementById("sunTwo");
-const lalande = document.getElementById("sunThree");
-const ross = document.getElementById("sunFour");
-const teegarden = document.getElementById("sunFive");
+const tenLac = document.getElementById("sunOne");
+const pCyg = document.getElementById("sunTwo");
+const vega = document.getElementById("sunThree");
+const kic = document.getElementById("sunFour");
+const hdfourteen = document.getElementById("sunFive");
 const gliese570 = document.getElementById("sunSix");
 const luyten = document.getElementById("sunSeven");
+
+myColors = {
+    'O': ['#88cafb', '136, 202, 251'],
+    'B': ['#d4ecfc'],
+    'A': ['#fbf9ff'],
+    'F': ['#f9fdcc'],
+    'G': ['#fcf764'],
+    'K': ['#f8c000'],
+    'M': ['#fa4234'],
+}
 
 const changeData = async (name) => {
 
@@ -33,23 +43,41 @@ const changeData = async (name) => {
     } else {
         declination = parseFloat(declination.slice(1) * -1);
     }
+    
+
+    if (magnitude[1][0] === '−') {
+        let absMag = magnitude.pop();
+        let absNum = parseFloat(absMag.slice(1) * -1);
+        magnitude.push(absNum);
+    }
+
+    
 
     let scatterData = {x: rightAsc, y: declination};
 
-    let name = data[0].name
-    let spectralClass = data[0].spectral_class
-    let constellation = data[0].constellation
+    let name = data[0].name;
+    let spectralClass = data[0].spectral_class;
+    let constellation = data[0].constellation;
+    let colors = myColors[spectralClass[0]];
+    let colorOne = colors[0];
+    let colorTwo = colors[1];
+
+    if (magnitude[1][0] === '-') {
+        let absMag = magnitude.pop();
+        let absNum = parseFloat(absMag.slice(1) * -1);
+        magnitude.push(absNum);
+    }
 
     
-    changeBar(magnitude);
-    changeDistance(distance);
-    updateScatter(scatterData);
+    changeBar(magnitude, colorOne);
+    changeDistance(distance, colorOne);
+    updateScatter(scatterData, colorOne);
     updateMisc(name, spectralClass, constellation);
 
 
     } catch (error) {
         console.log(error);
-        }
+    }
 }
 
 
@@ -73,41 +101,42 @@ const updateMisc = (name, stellarClass, constellation) => {
     miscContainer.appendChild(constLi);
 }
 
-proximaCent.addEventListener('click', async () => {
+
+tenLac.addEventListener('click', async () => {
     try {
-        await changeData('proxima');
+        await changeData('10 lac');
     } catch(error) {
         console.log(error);
     }
 });
 
-lacaille.addEventListener('click', async () => {
+pCyg.addEventListener('click', async () => {
     try {
-        await changeData('lacaille');
+        await changeData('P Cyg');
     } catch(error) {
         console.log(error);
     }
 });
 
-lalande.addEventListener('click', async () => {
+vega.addEventListener('click', async () => {
     try {
-        await changeData('lalande');
+        await changeData('vega');
     } catch(error) {
         console.log(error);
     }
 });
 
-ross.addEventListener('click', async () => {
+kic.addEventListener('click', async () => {
     try {
-        await changeData('ross 248');
+        await changeData('KIC 8');
     } catch(error) {
         console.log(error);
     }
 });
 
-teegarden.addEventListener('click', async () => {
+hdfourteen.addEventListener('click', async () => {
     try {
-        await changeData('teegarden');
+        await changeData('HD 147513');
     } catch(error) {
         console.log(error);
     }

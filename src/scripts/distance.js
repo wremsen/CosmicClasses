@@ -12,7 +12,6 @@ const distanceData = {
 const distanceOptions = {
   scales: {
     x: {
-      max: 20,
       beginAtZero: true,
       ticks: {
         color: 'white'
@@ -47,7 +46,8 @@ const distanceOptions = {
 let distance = new Chart(distanceGraph, {type: 'bar', data: distanceData, options: distanceOptions})
 
 
-const changeDistance = (data) => {
+const changeDistance = (data, color) => {
   distance.data.datasets[0].data = data;
+  distance.data.datasets[0].backgroundColor = color;
   distance.update();
 }

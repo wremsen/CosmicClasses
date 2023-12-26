@@ -61,8 +61,9 @@ const scatterOptions = {
 let scatterChart = new Chart(scatterGraph, {type: 'scatter', data: scatterData, options: scatterOptions})
 
 
-const updateScatter = (data) => {
+const updateScatter = (data, color) => {
     scatterChart.data.datasets[0].data[0] = data;
+    scatterChart.data.datasets[0].backgroundColor = color;
     scatterChart.update();
 }
 

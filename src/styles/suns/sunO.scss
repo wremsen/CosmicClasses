@@ -1,0 +1,38 @@
+.sunO {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: #88cafb;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    transform: translateY(-50%);
+    box-shadow: 
+    0 0 0 20px #88cafb80,
+    0 0 0 60px #88cafb20, 
+    0 0 0 80px #88cafb10, 
+    0 0 0 100px #88cafb00,
+    0 0 40px 100px #88cafb10;
+    animation: sunrise .5s infinite linear forwards, rays 1s infinite linear;
+}
+
+@keyframes rays {
+    0% {
+        box-shadow: 
+        0 0 0 0px #88cafb80, 
+        0 0 0 20px #88cafb80, 
+        0 0 0 60px #88cafb20, 
+        0 0 0 80px #88cafb10,
+        0 0 40px 100px #88cafb10;
+    }
+
+    100% {
+        box-shadow: 
+        0 0 0 20px #88cafb80,
+        0 0 0 60px #88cafb20, 
+        0 0 0 80px #88cafb10, 
+        0 0 0 100px #88cafb00,
+        0 0 40px 100px #88cafb10;
+    }
+}
