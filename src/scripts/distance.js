@@ -2,7 +2,7 @@ Chart.defaults.color = '#FFFFFF';
 const distanceGraph = document.getElementById("distanceChart");
 
 const distanceData = {
-  labels: ["Distance (Lightyears)"],
+  labels: [""],
   datasets: [{
     data: [0],
     backgroundColor: '#ff9b3c'
@@ -15,15 +15,20 @@ const distanceOptions = {
       max: 20,
       beginAtZero: true,
       ticks: {
-        color: 'white',
+        color: 'white'
       },
       grid: {
-        color: 'white',
+        color: 'white'
+      },
+      title: {
+        display: true,
+        text: 'Distance (Lightyears)',
+        color: 'white'
       }
     },
     y: {
       grid: {
-        color: 'white',
+        color: 'white'
       }
     }
   },

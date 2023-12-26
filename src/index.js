@@ -9,15 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
 //     headers: { 'x-api-key': 'V5JuNaDQpyt7KUdxNy9K0w==rYDridkfG3Qn0ZSZ' }
 //   }
   
-// let url = 'https://api.api-ninjas.com/v1/stars?name=proxima'
+// let url = 'https://api.api-ninjas.com/v1/stars?name='
   
   
 // fetch(url,options)
 //     .then(res => res.json())
 //     .then(data => {
 //         console.log(data);
-//         console.log(typeof data[0].distance_light_year);
-//         return data[0].name;
 //     })
 //     .catch(err => {
 //         console.log(`error ${err}`)
@@ -33,7 +31,5 @@ document.addEventListener("DOMContentLoaded", () => {
 // }
 
 // sunOne.addEventListener('click', fetchData);
-
-
 
 

@@ -1,55 +1,74 @@
+@font-face {
+    font-family: buttonFont;
+    src: url("../assets/AstroSpace-eZ2Bg.ttf");
+}
+
 #sunOne {
-    background-color: #ff9b3c;
-    box-shadow: 0 0 5px #ff9b3c,
-    0 0 20px #ff9b3c;
+    background-color: #88cafb;
+    box-shadow: 0 0 5px #88cafb,
+    0 0 20px #88cafb;
     text-align: center;
+    color: black;
+    font-family: buttonFont;
     cursor: pointer;
 }
 
 #sunTwo {
-    background-color: #ff9b3c;
-    box-shadow: 0 0 5px #ff9b3c,
-    0 0 20px #ff9b3c;
+    background-color: #d4ecfc;
+    box-shadow: 0 0 5px #d4ecfc,
+    0 0 20px #d4ecfc;
     text-align: center;
+    color: black;
+    font-family: buttonFont;
     cursor: pointer;
 }
 
 #sunThree {
-    background-color: #ff9b3c;
-    box-shadow: 0 0 5px #ff9b3c,
-    0 0 20px #ff9b3c;
+    background-color: #fbf9ff;
+    box-shadow: 0 0 5px #fbf9ff,
+    0 0 20px #fbf9ff;
     text-align: center;
+    color: black;
+    font-family: buttonFont;
     cursor: pointer;
 }
 
 #sunFour {
-    background-color: #ff9b3c;
-    box-shadow: 0 0 5px #ff9b3c,
-    0 0 20px #ff9b3c;
+    background-color: #f9fdcc;
+    box-shadow: 0 0 5px #f9fdcc,
+    0 0 20px #f9fdcc;
     text-align: center;
+    color: black;
+    font-family: buttonFont;
     cursor: pointer;
 }
 
 #sunFive {
-    background-color: #ff9b3c;
-    box-shadow: 0 0 5px #ff9b3c,
-    0 0 20px #ff9b3c;
+    background-color: #fcf764;
+    box-shadow: 0 0 5px #fcf764,
+    0 0 20px #fcf764;
     text-align: center;
+    color: black;
+    font-family: buttonFont;
     cursor: pointer;
 }
 
 #sunSix {
-    background-color: #ff9b3c;
-    box-shadow: 0 0 5px #ff9b3c,
-    0 0 20px #ff9b3c;
+    background-color: #f8c000;
+    box-shadow: 0 0 5px #f8c000,
+    0 0 20px #f8c000;
     text-align: center;
+    color: black;
+    font-family: buttonFont;
     cursor: pointer;
 }
 
 #sunSeven {
-    background-color: #ff9b3c;
-    box-shadow: 0 0 5px #ff9b3c,
-    0 0 20px #ff9b3c;
+    background-color: #fa4234;
+    box-shadow: 0 0 5px #fa4234,
+    0 0 20px #fa4234;
     text-align: center;
+    color: black;
+    font-family: buttonFont;
     cursor: pointer;
 }
