@@ -6,6 +6,11 @@ const hdfourteen = document.getElementById("sunFive");
 const gliese570 = document.getElementById("sunSix");
 const luyten = document.getElementById("sunSeven");
 
+
+Array.prototype.mySample = function() {
+    return this[Math.floor(Math.random() * this.length)];
+}
+
 myColors = {
     'O': ['#88cafb', '136, 202, 251'],
     'B': ['#d4ecfc'],
@@ -102,13 +107,18 @@ const updateMisc = (name, stellarClass, constellation) => {
 }
 
 
+classOStars = ['10 lac', '14 Cep', 'AE Aur', 'α Cam', 'ly aur', 'UW CMa']
+
 tenLac.addEventListener('click', async () => {
     try {
-        await changeData('10 lac');
+        let myStar = classOStars.mySample();
+        await changeData(myStar);
     } catch(error) {
         console.log(error);
     }
 });
+
+classBStars = []
 
 pCyg.addEventListener('click', async () => {
     try {
@@ -118,6 +128,8 @@ pCyg.addEventListener('click', async () => {
     }
 });
 
+classAStars = []
+
 vega.addEventListener('click', async () => {
     try {
         await changeData('vega');
@@ -125,6 +137,8 @@ vega.addEventListener('click', async () => {
         console.log(error);
     }
 });
+
+classFStars = []
 
 kic.addEventListener('click', async () => {
     try {
@@ -134,6 +148,8 @@ kic.addEventListener('click', async () => {
     }
 });
 
+classGStars = []
+
 hdfourteen.addEventListener('click', async () => {
     try {
         await changeData('HD 147513');
@@ -142,6 +158,8 @@ hdfourteen.addEventListener('click', async () => {
     }
 });
 
+classKStars = []
+
 gliese570.addEventListener('click', async () => {
     try {
         await changeData('gliese 570');
@@ -149,6 +167,8 @@ gliese570.addEventListener('click', async () => {
         console.log(error);
     }
 });
+
+classMStars = []
 
 luyten.addEventListener('click', async () => {
     try {

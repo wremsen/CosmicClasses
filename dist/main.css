@@ -79,28 +79,6 @@ table {
   z-index: -1000;
 }
 
-.sunO {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  background-color: #88cafb;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 250px;
-  transform: translateY(-50%);
-  box-shadow: 0 0 0 20px rgba(136, 202, 251, 0.5019607843), 0 0 0 60px rgba(136, 202, 251, 0.1254901961), 0 0 0 80px rgba(136, 202, 251, 0.062745098), 0 0 0 100px rgba(136, 202, 251, 0), 0 0 40px 100px rgba(136, 202, 251, 0.062745098);
-  animation: sunrise 0.5s infinite linear forwards, rays 1s infinite linear;
-}
-
-@keyframes rays {
-  0% {
-    box-shadow: 0 0 0 0px rgba(136, 202, 251, 0.5019607843), 0 0 0 20px rgba(136, 202, 251, 0.5019607843), 0 0 0 60px rgba(136, 202, 251, 0.1254901961), 0 0 0 80px rgba(136, 202, 251, 0.062745098), 0 0 40px 100px rgba(136, 202, 251, 0.062745098);
-  }
-  100% {
-    box-shadow: 0 0 0 20px rgba(136, 202, 251, 0.5019607843), 0 0 0 60px rgba(136, 202, 251, 0.1254901961), 0 0 0 80px rgba(136, 202, 251, 0.062745098), 0 0 0 100px rgba(136, 202, 251, 0), 0 0 40px 100px rgba(136, 202, 251, 0.062745098);
-  }
-}
 @font-face {
   font-family: buttonFont;
   src: url("../assets/AstroSpace-eZ2Bg.ttf");
@@ -238,6 +216,31 @@ button {
   cursor: pointer;
 }
 
+.sunO {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: #88cafb;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 250px;
+  transform: translateY(-50%);
+  box-shadow: 0 0 0 20px rgba(136, 202, 251, 0.5019607843), 0 0 0 60px rgba(136, 202, 251, 0.1254901961), 0 0 0 80px rgba(136, 202, 251, 0.062745098), 0 0 0 100px rgba(136, 202, 251, 0), 0 0 40px 100px rgba(136, 202, 251, 0.062745098);
+  animation: sunrise 0.5s infinite linear forwards, rays 1s infinite linear;
+  z-index: 9;
+}
+
+@keyframes rays {
+  0% {
+    box-shadow: 0 0 0 0px rgba(136, 202, 251, 0.5019607843), 0 0 0 20px rgba(136, 202, 251, 0.5019607843), 0 0 0 60px rgba(136, 202, 251, 0.1254901961), 0 0 0 80px rgba(136, 202, 251, 0.062745098), 0 0 40px 100px rgba(136, 202, 251, 0.062745098);
+    z-index: 9;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(136, 202, 251, 0.5019607843), 0 0 0 60px rgba(136, 202, 251, 0.1254901961), 0 0 0 80px rgba(136, 202, 251, 0.062745098), 0 0 0 100px rgba(136, 202, 251, 0), 0 0 40px 100px rgba(136, 202, 251, 0.062745098);
+    z-index: 9;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
