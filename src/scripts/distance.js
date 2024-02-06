@@ -22,7 +22,10 @@ const distanceOptions = {
       title: {
         display: true,
         text: 'Distance (Lightyears)',
-        color: 'white'
+        color: 'white',
+        font: {
+          family: 'Courier New',
+        },
       }
     },
     y: {

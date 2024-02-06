@@ -85,6 +85,45 @@ const changeData = async (name) => {
     }
 }
 
+const updateSunColor = (newColor) => {
+    var sunOElement = document.querySelector('.sunO');
+    sunOElement.style.backgroundColor = newColor;
+  
+    
+    var styleElement = document.getElementById('sun-styles');
+    if (!styleElement) {
+      styleElement = document.createElement('style');
+      styleElement.id = 'sun-styles';
+      document.head.appendChild(styleElement);
+    }
+  
+    var keyframes = `
+      @keyframes rays {
+        0% {
+          box-shadow: 
+            0 0 0 0px ${newColor}80, 
+            0 0 0 20px ${newColor}80, 
+            0 0 0 60px ${newColor}20, 
+            0 0 0 80px ${newColor}10,
+            0 0 40px 100px ${newColor}10;
+          z-index: 9;
+        }
+  
+        100% {
+          box-shadow: 
+            0 0 0 20px ${newColor}80,
+            0 0 0 60px ${newColor}20, 
+            0 0 0 80px ${newColor}10, 
+            0 0 0 100px ${newColor}00,
+            0 0 40px 100px ${newColor}10;
+          z-index: 9;
+        }
+      }
+    `;
+  
+    styleElement.innerHTML = keyframes;
+  }
+
 
 const updateMisc = (name, stellarClass, constellation) => {
     let miscContainer = document.getElementById('miscContainer')
@@ -113,6 +152,7 @@ tenLac.addEventListener('click', async () => {
     try {
         let myStar = classOStars.mySample();
         await changeData(myStar);
+        await updateSunColor('#88cafb')
     } catch(error) {
         console.log(error);
     }
@@ -123,6 +163,7 @@ classBStars = []
 pCyg.addEventListener('click', async () => {
     try {
         await changeData('P Cyg');
+        await updateSunColor('#d4ecfc');
     } catch(error) {
         console.log(error);
     }
@@ -133,6 +174,7 @@ classAStars = []
 vega.addEventListener('click', async () => {
     try {
         await changeData('vega');
+        await updateSunColor('#fbf9ff');
     } catch(error) {
         console.log(error);
     }
@@ -143,6 +185,7 @@ classFStars = []
 kic.addEventListener('click', async () => {
     try {
         await changeData('KIC 8');
+        await updateSunColor('#f9fdcc');
     } catch(error) {
         console.log(error);
     }
@@ -153,6 +196,7 @@ classGStars = []
 hdfourteen.addEventListener('click', async () => {
     try {
         await changeData('HD 147513');
+        await updateSunColor('#fcf764');
     } catch(error) {
         console.log(error);
     }
@@ -163,6 +207,7 @@ classKStars = []
 gliese570.addEventListener('click', async () => {
     try {
         await changeData('gliese 570');
+        await updateSunColor('#f8c000');
     } catch(error) {
         console.log(error);
     }
@@ -173,6 +218,7 @@ classMStars = []
 luyten.addEventListener('click', async () => {
     try {
         await changeData('luyten');
+        await updateSunColor('#fa4234');
     } catch(error) {
         console.log(error);
     }

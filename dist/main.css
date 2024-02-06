@@ -1,10 +1,4 @@
-/*!*************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
-  \*************************************************************************************************************************************/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,7 +20,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -59,279 +52,296 @@ table {
   font-family: spaceFont;
   src: url("../assets/AstroSpace-eZ2Bg.ttf");
 }
-#main > h1 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 36px;
-  font-family: spaceFont;
-  position: relative;
-  top: 25px;
-}
 
 .bg {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgb(0, 0, 0) 46%, rgb(7, 0, 42) 100%);
-  z-index: -1000;
+width: 100vw;
+height: 100vh;
+background: rgb(0, 0, 0);
+background: linear-gradient(180deg, rgb(0, 0, 0) 46%, rgb(7, 0, 42) 100%);
+z-index: -1000;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
-@font-face {
-  font-family: buttonFont;
-  src: url("../assets/AstroSpace-eZ2Bg.ttf");
-}
-#sunOne {
-  background-color: #88cafb;
-  box-shadow: 0 0 5px #88cafb, 0 0 20px #88cafb;
-  text-align: center;
-  color: black;
-  font-family: buttonFont;
-  cursor: pointer;
+#topNav {
+    width: 95%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid yellow;
+    flex-direction: column;
 }
 
-#sunTwo {
-  background-color: #d4ecfc;
-  box-shadow: 0 0 5px #d4ecfc, 0 0 20px #d4ecfc;
-  text-align: center;
-  color: black;
-  font-family: buttonFont;
-  cursor: pointer;
+#mainTitle {
+    width: 60%;
+    height: 40%;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#sunThree {
-  background-color: #fbf9ff;
-  box-shadow: 0 0 5px #fbf9ff, 0 0 20px #fbf9ff;
-  text-align: center;
-  color: black;
-  font-family: buttonFont;
-  cursor: pointer;
-}
-
-#sunFour {
-  background-color: #f9fdcc;
-  box-shadow: 0 0 5px #f9fdcc, 0 0 20px #f9fdcc;
-  text-align: center;
-  color: black;
-  font-family: buttonFont;
-  cursor: pointer;
-}
-
-#sunFive {
-  background-color: #fcf764;
-  box-shadow: 0 0 5px #fcf764, 0 0 20px #fcf764;
-  text-align: center;
-  color: black;
-  font-family: buttonFont;
-  cursor: pointer;
-}
-
-#sunSix {
-  background-color: #f8c000;
-  box-shadow: 0 0 5px #f8c000, 0 0 20px #f8c000;
-  text-align: center;
-  color: black;
-  font-family: buttonFont;
-  cursor: pointer;
-}
-
-#sunSeven {
-  background-color: #fa4234;
-  box-shadow: 0 0 5px #fa4234, 0 0 20px #fa4234;
-  text-align: center;
-  color: black;
-  font-family: buttonFont;
-  cursor: pointer;
-}
-
-@font-face {
-  font-family: spaceFont;
-  src: url("../assets/AstroSpace-eZ2Bg.ttf");
-}
-button {
-  all: unset;
-}
-
-#modContainer {
-  display: none;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background-color: rgba(35, 35, 35, 0.859);
-}
-
-#openMod {
-  height: 40px;
-  width: 80px;
-  background-color: white;
-  position: absolute;
-  top: 20px;
-  right: 360px;
-  border-radius: 12px;
-  color: #ff9b3c;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-}
-
-#modal {
-  width: 600px;
-  height: 200px;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgb(0, 0, 0) 46%, rgb(7, 0, 42) 100%);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  padding: 20px;
-}
-
-#modal h1 {
-  font-family: spaceFont;
-  font-size: 25px;
-}
-
-#modal p {
-  font-size: 20px;
-}
-
-#modal button {
-  height: 25px;
-  width: 80px;
-  border-radius: 10px;
-  background-color: white;
-  color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.sunO {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  background-color: #88cafb;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 250px;
-  transform: translateY(-50%);
-  box-shadow: 0 0 0 20px rgba(136, 202, 251, 0.5019607843), 0 0 0 60px rgba(136, 202, 251, 0.1254901961), 0 0 0 80px rgba(136, 202, 251, 0.062745098), 0 0 0 100px rgba(136, 202, 251, 0), 0 0 40px 100px rgba(136, 202, 251, 0.062745098);
-  animation: sunrise 0.5s infinite linear forwards, rays 1s infinite linear;
-  z-index: 9;
-}
-
-@keyframes rays {
-  0% {
-    box-shadow: 0 0 0 0px rgba(136, 202, 251, 0.5019607843), 0 0 0 20px rgba(136, 202, 251, 0.5019607843), 0 0 0 60px rgba(136, 202, 251, 0.1254901961), 0 0 0 80px rgba(136, 202, 251, 0.062745098), 0 0 40px 100px rgba(136, 202, 251, 0.062745098);
-    z-index: 9;
-  }
-  100% {
-    box-shadow: 0 0 0 20px rgba(136, 202, 251, 0.5019607843), 0 0 0 60px rgba(136, 202, 251, 0.1254901961), 0 0 0 80px rgba(136, 202, 251, 0.062745098), 0 0 0 100px rgba(136, 202, 251, 0), 0 0 40px 100px rgba(136, 202, 251, 0.062745098);
-    z-index: 9;
-  }
-}
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.barChartContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 275px;
-  padding: 20px;
-  position: absolute;
-  top: 185px;
-  left: 600px;
-  border-radius: 25px;
-}
-
-.distanceContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 125px;
-  padding: 10px;
-  position: absolute;
-  top: 510px;
-  left: 600px;
-  border-radius: 25px;
-}
-
-.scatterData {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 275px;
-  width: 500px;
-  padding: 20px;
-  position: absolute;
-  top: 185px;
-  left: 970px;
-  border-radius: 25px;
-}
-
-#miscContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  width: 350px;
-  height: 125px;
-  padding: 10px;
-  position: absolute;
-  top: 510px;
-  left: 1130px;
-  border-radius: 25px;
-}
-
-#miscContainer ul {
-  margin: 10px;
-  color: white;
-  font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.navContainer {
-  position: relative;
-  top: 15px;
+#mainTitle h1 {
+    color: rgb(255, 255, 255);
+    font-size: 250%;
+    font-family: spaceFont;
 }
 
 .navBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 1%;
-  left: 50%;
-  width: 700px;
-  height: 75px;
-  transform: translate(-50%, 50%);
+    padding-top: 10px;
+    height: 40%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navBox button {
-  height: 60px;
-  width: 60px;
-  border-radius: 30px;
-  background-color: white;
-  margin: 0 16px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
 }
+
+.navBox button:hover {
+    transform: scale(1.1);
+}
+#sunOne {
+    background-color: #88cafb;
+    box-shadow: 0 0 5px #88cafb, 0 0 20px #88cafb;
+    text-align: center;
+    color: black;
+    font-family: spaceFont;
+    cursor: pointer;
+}
+
+#sunTwo {
+    background-color: #d4ecfc;
+    box-shadow: 0 0 5px #d4ecfc, 0 0 20px #d4ecfc;
+    text-align: center;
+    color: black;
+    font-family: spaceFont;
+    cursor: pointer;
+}
+
+#sunThree {
+    background-color: #fbf9ff;
+    box-shadow: 0 0 5px #fbf9ff, 0 0 20px #fbf9ff;
+    text-align: center;
+    color: black;
+    font-family: spaceFont;
+    cursor: pointer;
+}
+
+#sunFour {
+    background-color: #f9fdcc;
+    box-shadow: 0 0 5px #f9fdcc, 0 0 20px #f9fdcc;
+    text-align: center;
+    color: black;
+    font-family: spaceFont;
+    cursor: pointer;
+}
+
+#sunFive {
+    background-color: #fcf764;
+    box-shadow: 0 0 5px #fcf764, 0 0 20px #fcf764;
+    text-align: center;
+    color: black;
+    font-family: spaceFont;
+    cursor: pointer;
+}
+
+#sunSix {
+    background-color: #f8c000;
+    box-shadow: 0 0 5px #f8c000, 0 0 20px #f8c000;
+    text-align: center;
+    color: black;
+    font-family: spaceFont;
+    cursor: pointer;
+}
+
+#sunSeven {
+    background-color: #fa4234;
+    box-shadow: 0 0 5px #fa4234, 0 0 20px #fa4234;
+    text-align: center;
+    color: black;
+    font-family: spaceFont;
+    cursor: pointer;
+}
+
+#sunAndDataWrapper {
+    width: 95%;
+    height: 75vh;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#sunWrapper {
+    height: 95%;
+    width: 35%;
+    border: 1px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#allDataWrapper {
+    height: 95%;
+    width: 60%;
+    border: 1px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sunO {
+    width: 35vh;
+    height: 35vh;
+    background-color: #f9fdcc;
+    border-radius: 50%;
+    animation: sunrise 0.5s infinite linear forwards, rays 1s infinite linear;
+}
+
+@keyframes rays {
+0% {
+    box-shadow: 
+    0 0 0 0px #f9fdcc80, 
+    0 0 0 20px #f9fdcc80, 
+    0 0 0 60px #f9fdcc20, 
+    0 0 0 80px #f9fdcc10,
+    0 0 40px 100px #f9fdcc10;
+    z-index: 9;
+}
+
+100% {
+    box-shadow: 
+    0 0 0 20px #f9fdcc80,
+    0 0 0 60px #f9fdcc20, 
+    0 0 0 80px #f9fdcc10, 
+    0 0 0 100px #f9fdcc00,
+    0 0 40px 100px #f9fdcc10;
+    z-index: 9;
+}
+}
+
+#graphsWrapper {
+    width: 95%;
+    height: 50%;
+    border: 1px solid blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#magnitudeChart {
+    width: 360px;
+    height: 250px;
+}
+
+.barChartContainer {
+    margin-right: 10%;
+}
+
+#miscContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 350px;
+    height: 125px;
+    border: 1px solid magenta;
+    top: 510px;
+    left: 1130px;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+#miscContainer ul {
+    margin: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: "Courier New";
+}
+
+.distanceContainer {
+    width: 500px;
+    height: 125px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modContainer {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(35, 35, 35, 0.97);
+}
+
+#modal {
+    width: 40vw;
+    height: 40vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 46%, rgb(7, 0, 42) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 40px;
+    z-index: 100;
+}
+
+#modal h1 {
+    font-family: spaceFont;
+    font-size: 25px;
+    margin-bottom: 4%;
+}
+
+#modal p {
+    font-size: 20px;
+    margin-bottom: 2%;
+    line-height: 110%;
+}
+
+#modal button {
+    height: 25px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: white;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#finalModWrapper {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+

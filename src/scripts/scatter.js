@@ -22,7 +22,10 @@ const scatterOptions = {
                 display: true,
                 // align: 'end',
                 text: 'Right Ascension (Hours)',
-                color: 'white'
+                color: 'white',
+                font: {
+                  family: 'Courier New',
+                },
             },
             ticks: {
                 color: 'white',
@@ -40,7 +43,10 @@ const scatterOptions = {
             title: {
                 display: true,
                 text: 'Declination',
-                color: 'white'
+                color: 'white',
+                font: {
+                  family: 'Courier New',
+                },
             },
             ticks: {
                 color: 'white',

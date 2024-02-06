@@ -14,23 +14,79 @@
 
   <body>
 
-  <div id="main">
-    <h1>Interstellar Neighbors</h1>
+    <div class="bg">
+
+
+      <div id="modContainer">
+        <div id="modal">
+            <h1>Welcome to Cosmic Classes:</h1>
+            <p>Did you know that every star in the universe is classified by astronomers based on their spectral characteristics and the analysis of their electromagnetic radiation? Me neither! Essentially every star is assigned a spectral class which mostly boils down to how big and how hot a star is. There are seven classes: O, B, A, F, G, K, M.</p>
+            <p>Cosmic Classes is a data visualization that allows you to examine some of the characteristics of the different classes of stars in our universe. Use the buttons at the top of the page to pull up data on different stars.</p>
+            
+            <div id="finalModWrapper">
+              <button id="closeMod">CLOSE</button>
+              <a href="https://github.com/wremsen">
+                <button>My Github</button>
+              </a>
+            </div>
+        </div>
+      </div>
+
+
+
+
+    <div id="topNav">
+    <div id="mainTitle"><h1>Cosmic Classes</h1></div>
+      <div class="navBox">
+        <button id="sunOne">O</button>
+        <button id="sunTwo">B</button>
+        <button id="sunThree">A</button>
+        <button id="sunFour">F</button>
+        <button id="sunFive">G</button>
+        <button id="sunSix">K</button>
+        <button id="sunSeven">M</button>
+      </div>
+    </div>
+
+    <div id="sunAndDataWrapper">
+      <div id="sunWrapper">
+          <div class="sunO"></div>
+      </div>
+      <div id="allDataWrapper">
+        <div id="graphsWrapper">
+          <div class="barChartContainer">
+            <canvas id="magnitudeChart"></canvas>
+          </div>
+
+          <div class="scatterData">
+            <canvas id="scatterPlot" width="400px" height="250px"></canvas>
+          </div>
+        </div>
+
+        <div id="graphsWrapper">
+          <div class="distanceContainer">
+            <canvas id="distanceChart" width="500px" height="100px"></canvas>
+          </div>
+          <div id="miscContainer">
+            <ul>Name:</ul>
+            <ul>Class:</ul>
+            <ul>Constellation:</ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  
+  <!-- <div id="sunWrapper">
+    <div class="sunO"></div>
   </div>
 
   
-
-  <div class="bg"></div>
-
-  <div class="sunB" id="Bsun"></div>
-  <div class="sunA" id="Asun"></div>
-  <div class="sunF" id="Fsun"></div>
-  <div class="sunG" id="Gsun"></div>
-  <div class="sunK" id="Ksun"></div>
-  <div class="sunM" id="Msun"></div>
-  <div class="sunO" id="Osun"></div>
-  
-  
+  <div id="dataWrapper">
     <div class="barChartContainer">
       <canvas id="magnitudeChart" width="275px" height="275px"></canvas>
     </div>
@@ -48,22 +104,10 @@
       <ul>Class:</ul>
       <ul>Constellation:</ul>
     </div>
+  </div> -->
 
-    <div class="navContainer">
-      <div class="navBox">
-        <button id="sunOne">O</button>
-        <button id="sunTwo">B</button>
-        <button id="sunThree">A</button>
-        <button id="sunFour">F</button>
-        <button id="sunFive">G</button>
-        <button id="sunSix">K</button>
-        <button id="sunSeven">M</button>
-      </div>
-    </div>
-
-    <button id="openMod">About</button>
     
-    <div id="modContainer">
+    <!-- <div id="modContainer">
         <div id="modal">
             <h1>Welcome to Interstellar Neighbors:</h2>
             <br>
@@ -75,7 +119,7 @@
               <button>My Github</button>
             </a>
         </div>
-    </div>
+    </div> -->
 
 
     <script src="./src/scripts/scatter.js"></script>
@@ -83,6 +127,8 @@
     <script src="./src/scripts/bar.js"></script>
     <script src="./src/scripts/buttons.js"></script>
     <script src="./src/scripts/modal.js"></script>
+
+  </div>
   </body>
 
 </html>

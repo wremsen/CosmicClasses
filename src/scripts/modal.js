@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const openMod = document.getElementById("openMod");
+    const openMod = document.getElementById("mainTitle");
     const closeMod = document.getElementById("closeMod");
     const modal = document.getElementById("modContainer");
 

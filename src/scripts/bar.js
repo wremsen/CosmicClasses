@@ -27,6 +27,9 @@ const barOptions = {
       },
       ticks: {
         color: 'white',
+        font: {
+          family: 'Courier New',
+        },
       },
       grid: {
         color: 'white',
@@ -47,7 +50,8 @@ const barOptions = {
       display: false,
     }
   },
-  responsive: true
+  responsive: true,
+  maintainAspectRatio: false
 }
 
 let magnitude = new Chart(magnitudeGraph, {type: 'bar', data: magnitudeData, options: barOptions})
