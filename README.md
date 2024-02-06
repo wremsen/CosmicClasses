@@ -2,7 +2,7 @@
 
 ## Background
 
-[Live link!](https://wremsen.github.io/InterstellarNeighbors/)
+[Live link!](https://wremsen.github.io/CosmicClasses/)
 
 Interstellar Neighbors is a data visualization project focusing on some of the nearest planetary star systems to our solar system - our neighbors so-to-speak. The key focus of this project was to take a look at the nearest stars that have robust planetary systems, possible destinations in the cosmos for far future humans to visit.
 
