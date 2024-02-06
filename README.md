@@ -1,16 +1,15 @@
-# Interstellar Neighbors
-
+# Cosmic Classes
 ## Background
 
 [Live link!](https://wremsen.github.io/CosmicClasses/)
 
-Interstellar Neighbors is a data visualization project focusing on some of the nearest planetary star systems to our solar system - our neighbors so-to-speak. The key focus of this project was to take a look at the nearest stars that have robust planetary systems, possible destinations in the cosmos for far future humans to visit.
+Did you know that every star in the universe is classified by astronomers based on their spectral characteristics and the analysis of their electromagnetic radiation? Me neither! Essentially every star is assigned a spectral class which mostly boils down to how big and how hot a star is. There are seven classes: O, B, A, F, G, K, M.
 
-By plugging into the Stars API from API Ninjas, Interstellar Neighbors fetches data and characteristics of these far away stars.
+By plugging into the Stars API from API Ninjas, Cosmic Classes fetches data and characteristics of these far away stars.
 
 ## Functionality & MVPs
 
-With Interstellar Neighbors you can:
+With Cosmic Classes you can:
 
 - Click on various stars to view their data
 
@@ -74,10 +73,3 @@ List the technologies, frameworks, and tools I used in this project.
 
 - Chart.js
 - Stars API (API Ninjas)
-
-## Future Features
-
-- Changes to star buttons: Instead of fetching an indiviual star's data - cycle through stars of similar classes
-- Implement a more robust "distance" chart: represent to-scale distance of selected star
-- Search functionality: search for a star by specific properties
-- Styling tweaks and adjustments
