@@ -73,3 +73,7 @@ List the technologies, frameworks, and tools I used in this project.
 
 - Chart.js
 - Stars API (API Ninjas)
+
+## Todo
+
+- Modals for explaining the various data charts i.e. what is the difference between absolute and apparent magnitude?
