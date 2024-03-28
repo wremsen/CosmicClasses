@@ -19,6 +19,33 @@ button {
     background-color: rgba(35, 35, 35, 0.859);
 }
 
+#magModalContainer {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(35, 35, 35, 0.859);
+}
+
+#magModal {
+    width: 600px;
+    height: 200px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 46%, rgba(7,0,42,1) 100%);  
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 20px;
+}
+
 #openMod {
     height: 40px;
     width: 80px;
